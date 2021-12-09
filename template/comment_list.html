@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comment</title>
+</head>
+<body>
+<ul>
+            {% for i in object_list %}
+            <li class='Comment'>
+                <h2><a href="/Comment/{{ i.pk }}/">{{ i.text}}</a></h2>
+                <p class="Comment-description">{{ i.date}}</p>
+            </li>
+            {% endfor %}
+        </ul>
+</body>
+</html>
